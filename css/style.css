@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Subrayada&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p {
+    color: black;
+    font-size: 1.4rem;
+    margin-top: 5px;
+    line-height: 2.5rem;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    padding-left: 30px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url(../imgs/pexels-jiarong-deng-1034662.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    justify-content: flex-start;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    font-size: 4rem;
+    position: relative;
+    color: transparent;
+
+    /*Text Animation*/
+    animation: text_reveal 0.5s ease forwards;
+    animation-delay: 1.5s;
+}
+
+/*Row Animation*/
+#hero h1:nth-child(1) {
+    animation-delay: 1.5s;
+}
+#hero h1:nth-child(2) {
+    animation-delay: 2.5s;
+}
+#hero h1:nth-child(3) {
+    animation-delay: 3.5s;
+}
+/*End of Row animation*/
+
+#hero h1 span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: coral;
+
+    /*Text Animation*/
+    animation: text_reveal_box 1s ease;
+    animation-delay: 1s;
+}
+
+/*Row Animation*/
+#hero h1:nth-child(1) span {
+    animation-delay: 1s;
+}
+#hero h1:nth-child(2) span {
+    animation-delay: 2s;
+}
+#hero h1:nth-child(3) span {
+    animation-delay: 3s;
+}
+
+/*End of Row Animation*/
+
+#hero .cta {
+    display: inline-block;
+    padding: 10px 30px;
+    color: snow;
+    background-color: transparent;
+    border: 2px solid coral;
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.75rem;
+    margin-top: 30px;
+    transition: .3s ease background-color;
+    transition-property: background-color, color;
+
+}
+
+#hero .cta:hover {
+    color: white;
+    background-color: coral;
+    opacity: .8;
+
+    animation: portfolio_box 1s ease;
+}
+/* End of Hero Section*/
+
+/* Start of Services Section*/
+#services {
+    background-color: blanchedalmond;
+}
+
+#services .service {
+    flex-direction: column;
+    text-align: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+#services .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: black;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+
+}
+
+#services .section-title span {
+    color: tomato;
+}
+
+#services .service-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+#services .service-item {
+    flex-basis: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-image: url(../imgs/pexels-burst-373912.jpg);
+    background-size: cover;
+    margin: 10px 5%;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#services .service-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    opacity: .3;
+    z-index: -1;
+}
+
+#services .service-item {
+    transition: .3s ease transform;
+}
+
+#services .service-item:hover {
+    transform: scale(1.1);
+}
+
+#services .service-bottom .icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+#services .service-bottom .icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#services .service-item h2 {
+    font-size: 2rem;
+    color: blanchedalmond;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#services .service-item p {
+    color: white;
+    text-align: left;
+    font-size: 1.4rem;
+    line-height: 1.9rem;
+}
+
+#services .service-item p {
+    color: white;
+    text-align: left;
+}
+
+/* End of Services Section*/
+
+/*Start of AboutMe Section*/
+#about {
+    background-image: url(../imgs/tnc_16935516.jpg);
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#about .section-title span {
+    color: tomato;
+}
+
+#about .about {
+    flex-direction: column-reverse;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+
+#about .section-title {
+    font-size: 4rem;
+    font-weight: 300;
+    color: blanchedalmond;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    text-align: center;
+}
+
+#about .col-left {
+    width: 250px;
+    height: 360px;
+}
+
+#about .col-right {
+    width: 100%;
+}
+
+#about .col-right h2 {
+    font-size: 1.6rem;
+    font-weight: 1000;
+    color: whitesmoke;
+    letter-spacing: .2rem;
+    margin-bottom: 10px;
+}
+
+#about .col-right p {
+    margin-bottom: 20px;
+    color: blanchedalmond;
+}
+
+#about .col-left .about-img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    border: 12px solid rgba(0, 0, 0, 1);
+}
+
+#about .col-left .about-img::after {
+    content: '';
+    position: absolute;
+    left: -19px;
+    top: 11px;
+    height: 98%;
+    width: 98%;
+    border: 7px solid coral;
+    z-index: -1;
+}
+/*End of AboutMe section*/
+
+/*Animation*/
+@keyframes text_reveal_box{
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+@keyframes text_reveal{
+    100%{
+        color: blanchedalmond;
+    }
+}
+
+@keyframes portfolio_box{
+    100%{
+        width: 100%;
+        left: 100;
+    }
+    0%{
+        width: 85%;
+        left: 100;
+    }
+}
+/*End of Animation*/
