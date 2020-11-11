@@ -165,6 +165,10 @@ p {
 
 }
 
+#services .service-top p {
+    padding-right: 40px;
+}
+
 #services .section-title span {
     color: tomato;
 }
@@ -296,6 +300,7 @@ p {
 #about .col-right p {
     margin-bottom: 20px;
     color: blanchedalmond;
+    padding-right: 40px;
 }
 
 #about .col-left .about-img {
