@@ -294,11 +294,6 @@ p {
     padding: 100px 0;
 }
 
-#services .service-top {
-    width: 500px;
-    max-margin: 0 auto;
-}
-
 #services .section-title {
     font-size: 4rem;
     font-weight: 300;
@@ -518,9 +513,8 @@ p {
     /*End About*/
 
 }
-
-
 /*End Media Query for Tablet*/
+
 
 /* Media Query for Desktop*/
 @media only screen and (min-width:1200px) {
@@ -532,6 +526,7 @@ p {
 
 
 /*End Media Query for Desktop*/
+
 
 /*Animation*/
 @keyframes text_reveal_box{
