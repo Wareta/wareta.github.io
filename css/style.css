@@ -527,6 +527,12 @@ p {
 
 /*End Media Query for Desktop*/
 
+@media only screen and (max-width:300px){
+    body {
+        width: 300px;
+    }
+}
+
 
 /*Animation*/
 @keyframes text_reveal_box{
